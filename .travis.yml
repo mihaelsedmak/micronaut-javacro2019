@@ -3,7 +3,7 @@ language: java
 before_install:
 # install heroku CLI
 - wget -qO- https://cli-assets.heroku.com/install.sh | sh
-- heroku login
+- heroku login -i
 - heroku container:login
 
 install: true
