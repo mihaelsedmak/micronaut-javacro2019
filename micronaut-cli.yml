@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: javacro2019
+---
+testFramework: junit
+sourceLanguage: java

@@ -1,0 +1,1 @@
+web: java -jar build/libs/javacro2019-0.1.jar

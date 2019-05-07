@@ -1,0 +1,8 @@
+micronaut:
+  application:
+    name: javacro2019
+  meetup:
+    auth-key: e425e763e704e33e26181b1a1113c
+    urlname: AG04-Tech-Tips
+    id: 249381644
+
