@@ -1,12 +1,23 @@
 language: java
-install:
-  - ./gradlew assemble
+
+before_install:
+# install heroku CLI
+- wget -qO- https://toolbelt.heroku.com/install.sh | sh
+- heroku login
+- heroku container:login
+
+install: true
 
 jdk:
 - oraclejdk11
 
+services:
+- docker
+
 script:
-- ./gradlew build --scan -s
+- ./gradlew build
+- heroku container:push web -a micronaut-javacro2019
+- heroku container:release web -a micronaut-javacro2019
 
 before_cache:
 - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
