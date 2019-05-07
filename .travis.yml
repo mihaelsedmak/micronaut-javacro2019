@@ -2,7 +2,7 @@ language: java
 
 before_install:
 # install heroku CLI
-- wget -qO- https://toolbelt.heroku.com/install.sh | sh
+- wget -qO- https://cli-assets.heroku.com/install.sh | sh
 - heroku login
 - heroku container:login
 
