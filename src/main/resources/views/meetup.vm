@@ -3,9 +3,9 @@
 <head>
     <title>Meetup Redirect!</title>
     <meta charset="UTF-8">
-    <meta http-equiv="Refresh" content="2; {{link}}">
+    <meta http-equiv="Refresh" content="2;$link">
 </head>
 <body>
-<h1><span>{{name}}</span></h1>
+<h1><span>$name</span></h1>
 </body>
 </html>
